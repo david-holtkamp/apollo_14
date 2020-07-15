@@ -1,0 +1,11 @@
+<h1>Astronaut's Index page</h1>
+
+<% @astronauts.each do |astronaut|  %>
+  <h3>Name: <%= astronaut.name %></h3>
+  <p>Age: <%= astronaut.age %></p>
+  <p>Job: <%= astronaut.job %></p>
+  <p>Missions: <%= astronaut.mission_count %></p>
+  <p>Total Time in Space: <%= astronaut.hours_in_space %> days</p>
+<% end %>
+
+<h2>Average Age: <%= @astronauts.average_age %></h2>
